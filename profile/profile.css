@@ -1,0 +1,139 @@
+:root {
+    --grey: rgb(79, 81, 82);
+    --blue: rgb(140, 186, 239);
+    --light-blue: rgb(215, 235, 244);
+}
+
+#confirm {
+    display: none;
+    background-color: rgb(215, 235, 244);
+    position: fixed;
+    width: 40vw;
+    height: 15vw;
+    left: 30vw;
+    top:40%;
+    font-size: 2vw;
+    border-radius: 5px;
+    border: solid black;
+    /* margin-left: 50vw; */
+    padding: 1vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    #confirm button {
+        background-color: rgb(215, 235, 244);
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 1vw;
+        text-align: center;
+        font-size: 2vmin;
+        width: 10vw;
+        cursor: pointer;
+    }
+
+.grey {
+    background-color: var(--grey);
+}
+
+.header-button {
+    background-color: var(--grey);
+    border: none;
+    color: var(--blue);
+    padding: 0;
+    margin: 0 5% 0 0;
+    font-size: 3vmin;
+}
+
+.header-button:hover {
+    cursor: pointer;
+}
+
+.pic {
+    height: min(20vmin,50px);
+    width: min(20vmin,50px);
+    border-radius: min(20vmin,50px);
+    object-fit: cover; 
+    margin: 2vmin 1vmin 2vmin 3vmin;
+}
+
+.header {
+    text-align: left;
+    width: 100%;
+    height: min(25vmin,70px);
+    color: rgb(140, 186, 239);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+.post { 
+    display: inline-block;
+    height: min(90vw, 400px);
+    width: min(100vw, 500px) ;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+    
+    border: solid;
+    background-color: var(--light-blue);
+    /* background-image: url('../app_images/post_background.jpg');
+    background-repeat: no-repeat;
+    background-size:min(100vw, 500px) min(90vw, 400px); */
+}
+
+.post h3 {
+    color: white;
+    /* font-size: 5vmin; */
+    text-align: center;
+    max-lines: 1;
+}
+
+.post-header {
+    width: 100%;
+    height: min(50vw, 220px);
+    background-color: var(--grey);
+    border-radius: 5px;
+}
+
+.post b {
+    color: var(--blue);
+    font-size: calc(min(50vw, 220px)/20);
+}
+
+.post span{
+    color: white;
+    font-size: calc(min(50vw, 220px)/22);
+}
+
+.post a{
+    font-size: calc(min(50vw, 220px)/22);
+    color: var(--grey);
+}
+
+.post-img {
+    float: left;
+    width: 35%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border: solid var(--grey);
+    margin: 0 5px 5px 0;
+}
+
+.edit-post-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    color: var(--grey);
+    background-color: var(--light-blue);
+    font-size: 2vmin;
+    border-radius: 5px;
+}

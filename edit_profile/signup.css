@@ -1,0 +1,118 @@
+:root {
+    --grey: rgb(79, 81, 82);
+    --blue: rgb(140, 186, 239);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.form-item {
+    width:90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    /* border: solid; */
+    box-sizing: border-box;
+}
+
+input {
+    width: 90%;
+    height: 5vmin;
+    padding-left: 5px;
+    font-size: 2vmin;
+    background-color: rgb(187, 207, 231);
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.div {
+    margin: 2vh 0 2vh 0;
+    position: relative;
+    /* height: 5vmin; */
+    width: 25vmin;
+    border-radius: 2px;
+    background-color: var(--grey);
+    box-sizing: border-box;
+    font-size: 2vmin;
+    padding-top: 1vmin;
+    color: var(--blue);
+    /* border: solid; */
+}
+
+.div:hover {
+    cursor: pointer;
+}
+
+.file {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+}
+
+.file:hover {
+    cursor: pointer;
+}
+
+.remove-photo-btn {
+    background-color: var(--grey);
+    color: red;
+    width: 100%;
+    border: none;
+    font-size: 2vmin;
+    display: none;
+    text-align: center;
+}
+
+.header {
+    text-align: left;
+    width: 100%;
+    height: min(25vmin,70px);
+    color: rgb(140, 186, 239);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+.remove-photo-btn:hover {
+    cursor: pointer;
+}
+
+.label {
+    color: lightgray;
+    font-weight: 100;
+    font-size: 2vmin;
+    width: 15%;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.save-button {
+    background-color: var(--blue);
+    color: var(--dark-blue);
+    width: 30%;
+    margin-bottom: 2vmin;
+}
+
+.save-button:hover {
+    border: 1px solid var(--blue);
+    background-color: var(--dark-blue);
+    color: var(--blue);
+}
+
+.skip-button {
+    background-color: var(--grey);
+    width: fit-content;
+    color: var(--blue);
+    cursor: pointer;
+}

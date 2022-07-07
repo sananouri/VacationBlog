@@ -1,0 +1,52 @@
+:root {
+    --grey: rgb(79, 81, 82);
+    --orange: orange;
+    --blue: rgb(140, 186, 239);
+    --dark-blue: rgb(78, 87, 133);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+input {
+    width: 90%;
+    height: 5vmin;
+    padding-left: 5px;
+    margin-bottom: 2vmin;
+    font-size: 2vmin;
+    background-color: rgb(187, 207, 231);
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#label {
+    color: lightgray;
+    font-weight: 100;
+    font-size: 1.7vmin;
+}
+
+.signup-button {
+    color: var(--blue);
+    background-color: var(--dark-blue);
+    border: none;
+    font-size: 1.7vmin;
+    padding: 0;
+    margin: 0 2px;
+}
+
+.signup-button:hover {
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: var(--blue);
+    color: var(--dark-blue);
+}
+
+.login-button:hover {
+    border: 1px solid var(--blue);
+    background-color: var(--dark-blue);
+    color: var(--blue);
+}
